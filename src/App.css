@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,400&display=swap');
+*{box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.firstBlog{display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('./img/handy.jpg');
+      border-bottom: #DD0D0D solid 2px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.blog{display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+    align-items: center;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  border-radius: 40px;
+  background-color: rgba(236, 236, 236, 0.808);
+  height: 60vh;
+  width: 80vh;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 200;
 
-.App-link {
-  color: #61dafb;
+    }
+.blog p{width: 60%;
+        font-size: 6vh;
+        text-align: center;
+        background: none;
+      margin-bottom: 20px;
+    line-height: 1.6;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.blog button{font-size: 30px;
+        width: 60%;
+        background: none;
+        color:#DD0D0D;
+    border-radius: 20px;
+    border-color:#DD0D0D;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;}
+    button:hover{background-color: rgb(161, 69, 69);
+                border-color: #ECECEC;
+                color: #ECECEC;}
+            
+        

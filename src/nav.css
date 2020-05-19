@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #ECECEC;
+}
+
+#nav_links950 {
+  display: none;
+}
+
+.burger {
+  display: none;
+}
+
+header li, header a, header button {
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+header ul {
+  list-style: none;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 25px 10%;
+  height: 30px;
+}
+
+.logo {
+  color: #DD0D0D;
+  width: 20%;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0 25px;
+}
+
+.nav_links li a {
+  -webkit-transition: all 0.3s  ease 0s;
+  transition: all 0.3s  ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #DD0D0D;
+}
+
+.nav_contact li {
+  display: inline-block;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.nav_contact i {
+  font-size: 30px;
+}
+
+header button {
+  color: #DD0D0D;
+  border-radius: 20px;
+  border-color: #DD0D0D;
+  background-color: #ECECEC;
+  padding: 15px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+header button:hover {
+  background-color: #a14545;
+  border-color: #ECECEC;
+  color: #ECECEC;
+}
+
+@media screen and (max-width: 950px) {
+  .burger {
+    z-index: 10;
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .nav_links {
+    display: none;
+  }
+  .nav_contact {
+    display: none;
+  }
+  #nav_links950 {
+    z-index: 9;
+    display: block;
+    position: fixed;
+    text-align: center;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100%;
+    background-color: #ECECEC;
+    clip-path: circle(0vh);
+    -webkit-clip-path: circle(0vh);
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
+  #nav_links950 li {
+    margin: 10vh;
+  }
+  .open {
+    clip-path: circle(100vh) !important;
+    -webkit-clip-path: circle(100vh) !important;
+  }
+}
+/*# sourceMappingURL=nav.css.map */
