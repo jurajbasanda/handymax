@@ -1,15 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
 $red:#DD0D0D;
 $white:#ECECEC;
-*{box-sizing: border-box;
+body{box-sizing: border-box;
     margin: 0;
   padding: 0;
   background-color:$white;
+  font-family: 'Nunito Sans', sans-serif;
   }
-  #nav_links950{display: none;}
+*{ text-decoration: none;}
+  .nav_links950{display: none;}
   .burger{display: none;}
-header{
-  li,a,button{
+nav{position: fixed;
+  top: 0;
+  background-color: $white;
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+   margin: auto;
+    height: 70px;
+    width:100% ;
+    border-bottom: solid 2px $red;
+    padding-left:10vh ;
+    padding-right: 10vh;
+
+
+  li,button{
       font-weight: 400;
       font-size: 18px;
       color: black;
@@ -18,29 +33,25 @@ header{
     }
 
   ul{list-style: none;}
-  nav{display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 25px 10%;
-        height: 30px;
-    }
+ 
 }
-.logo{color: $red;
-    width: 20%;
+.logo{
+  color: $red;
     font-size: 30px;
     text-align:center;
+    text-decoration: none;
     cursor: pointer;
 }
 .nav_links li{display: inline-block;
                 padding: 0 25px;}
 
-.nav_links li a{transition:  all 0.3s  ease 0s;}
-.nav_links li a:hover{color: $red;}
+.nav_links li {transition:  all 0.3s  ease 0s;}
+.nav_links li:hover{color: $red;}
 .nav_contact li{display: inline-block;
     padding: 0 20px;
     cursor: pointer;}
     .nav_contact i{font-size: 30px;}
-header{
+nav{
 button{color: $red;
     border-radius: 20px;
     border-color: $red;
@@ -52,15 +63,29 @@ button:hover{background-color: rgb(161, 69, 69);
             border-color: $white;
             color: $white;}
         }
+.tel{
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  a{color: black;}
+  :hover{color: rgb(161, 69, 69);}}
 //---------------------------------------Mobil version--------------------------------------------------
+@media screen and (max-width:1030px){ 
+   nav{width: 100%;
+  padding-left: 1vh;
+    padding-right: 1vh;}
+}
 @media screen and (max-width:950px){
+  .logo{z-index: 999;}
+  nav{width: 100%;
+    padding-left: 5vh;
+      padding-right: 5vh;}
     .burger{z-index: 10;
             display: block;
             font-size: 20px;
             cursor: pointer;}
     .nav_links{display: none;}
     .nav_contact{display: none;}
-    #nav_links950 {z-index: 9;
+    .nav_links950 {z-index: 9;
                 display: block;
                 position: fixed;
                 text-align: center;
@@ -71,11 +96,30 @@ button:hover{background-color: rgb(161, 69, 69);
                 background-color: $white;
                 clip-path: circle(0vh);
                 -webkit-clip-path:circle(0vh);
-                transition: all 1s ease-out;
+                transition: all 0.5s ease-out;
                 li{margin: 10vh;}
              }
-    .open{clip-path: circle(100vh)!important;
-        -webkit-clip-path:circle(100vh)!important;}
+    .open{
+      transition: all 1s ease-out;
+      clip-path: circle(100vh);
+      -webkit-clip-path:circle(100vh);
+          
+        }
+             
+
+}
+//---------------------------------------Mobil version 330px--------------------------------------------------
+@media screen and (max-width:330px){
+  nav{padding-left: 10px;
+      padding-right: 10px;}
+    .burger{z-index: 10;
+            display: block;
+            font-size: 20px;
+            cursor: pointer;}
+    .nav_links{display: none;}
+    .nav_contact{display: none;}
+    
+    
              
 
 }
