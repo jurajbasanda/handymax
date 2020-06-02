@@ -39,16 +39,13 @@ const CarpentryP=()=> {
     
 
     return (
-        <section>
+        <section className='page'>
             <div className='back' style={img}></div>
-            <article className='page'>
-
             <Link to='./services'>Back to services</Link>
             <h1>{h1Text}</h1>
             <p>{paragraph}</p>
             
             <div className="container">
-    <p>{firstP}</p>
             <div className='gallery'>
                 <div className='main-img'>
                 <img src={selected1} alt={altImg} key={selected1} id='current'/>
@@ -60,21 +57,21 @@ const CarpentryP=()=> {
                     <img src={img4} alt={altImg} key={img4} onClick={() => setSelected1(img4)}/>
                 </div>
             </div>
-            <p>{secondP} </p>
-            <div className='gallerySecond'>
-                <div className='main-img'>
-               
-                <img src={selected} alt={altImg} key={selected} id='current'/>
-                </div>
-                <div className='imgs'>
-                    <img src={img11} alt={altImg} key={img11} onClick={() => setSelected(img11)}/>
-                    <img src={img12} alt={altImg} key={img12} onClick={() => setSelected(img12)}/>
-                    <img src={img13} alt={altImg} key={img13} onClick={() => setSelected(img13)}/>
-                    <img src={img14} alt={altImg} key={img14} onClick={() => setSelected(img14)}/>
-                </div>
+    <p>{firstP}</p>
+    <div className='gallerySecond'>
+    <div className='main-img'>
+    <img src={selected} alt={altImg} key={selected} id='current'/>
+    </div>
+    <div className='imgs'>
+    <img src={img11} alt={altImg} key={img11} onClick={() => setSelected(img11)}/>
+    <img src={img12} alt={altImg} key={img12} onClick={() => setSelected(img12)}/>
+    <img src={img13} alt={altImg} key={img13} onClick={() => setSelected(img13)}/>
+    <img src={img14} alt={altImg} key={img14} onClick={() => setSelected(img14)}/>
+    </div>
+    </div>
+    <p>{secondP} </p>
             </div>
-            </div>
-                </article>
+
         </section>
     )
 }

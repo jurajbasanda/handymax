@@ -102,9 +102,10 @@ render(){
                 </div>
                 <div className='imgBack'></div>
                     </section>
-                    <ServicesBar></ServicesBar>
-              
+
+            <ServicesBar></ServicesBar>
             <Reviews/>
+            {/*}
                   <section className='My'>
                   <h1>What Our Customers Say About Us</h1>
             <div className='myR'>
@@ -127,6 +128,7 @@ render(){
             </div>
             </div>
               </section>
+          {*/}
               </main>
           )
       }
