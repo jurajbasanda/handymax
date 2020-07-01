@@ -26,12 +26,12 @@ const Nav = () =>{
             <Link to='/services' onClick={openNav}><li>Services</li></Link>
             <Link to='/about' onClick={openNav}><li>About</li></Link>
             <Link to='/contact' onClick={openNav}><li>Contact</li></Link>
-                <li><div className='tel'onClick={openNav}><a href="tel:+"><i className="fas fa-phone"></i> 077 593 00907</a></div></li>
+                <li><div className='tel'onClick={openNav}><a href="tel:+"><i className="fas fa-phone"></i> 077 593 00007</a></div></li>
                 <Link to='/contact'><li><button onClick={openNav}>BOOK NOW</button></li></Link>
             </ul>
             
             <ul className='nav_contact'>
-                <li><div className='tel'><a href="tel:+" ><i className="fas fa-phone"></i> 077 593 00907</a></div></li>
+                <li><div className='tel'><a href="tel:+" ><i className="fas fa-phone"></i> 077 593 00007</a></div></li>
                 <Link to='/contact'><li><button>BOOK NOW</button></li></Link>
             </ul>
             <div className="burger"  onClick={openNav}><i className="fas fa-bars"></i></div>

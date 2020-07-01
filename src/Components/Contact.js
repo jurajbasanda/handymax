@@ -21,7 +21,7 @@ If you need a multi-skilled handyman, or a qualified plumber or electrician, con
  We’re always polite, always friendly, and most importantly – we’re always Handy!
 </p>
 <strong>
-  <a href="tel:+" > <i className="fas fa-phone"></i> Call  077 593 00907</a>
+  <a href="tel:+" > <i className="fas fa-phone"></i> Call  077 593 00007</a>
 <ul>
   <li>We’ll get back to you as soon as possible</li>
   <li>We’ll provide you with an estimated cost of the work requested</li>

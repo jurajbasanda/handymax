@@ -29,19 +29,13 @@ const serviceObject = [{name:'Locksmith',
 export default function ServicesBar() {
   const content = serviceObject.map((service) => 
   <Link to={service.name}><img src={service.img} alt="" /><span>{service.name}</span></Link>
-
     )
-
-  
     return (
       <section className='services'>
           <Link to='/services'><h1>Services</h1></Link>
                     <div className='servicesBar'>
         {content}
         </div>
-            </section>
-       
-       
-                  
+            </section>          
     )
 }
