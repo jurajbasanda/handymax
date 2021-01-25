@@ -40,20 +40,42 @@ export default class App extends Component {
 				<Switch>
 					<Route path='/' exact component={Home} />
 					<Route path='/services' component={ServicesP} />
-					<Route path='/about' component={About} />
-					<Route path='/contact' component={Contact} />
+					<Route path='/about' component={About}>
+						<About />
+					</Route>
+					<Route path='/contact' component={Contact}>
+						<Contact />
+					</Route>
 
-					<Route path='/locksmith' component={LocksmithP}></Route>
-					<Route path='/plumber' component={PlumberP}></Route>
-					<Route path='/carpentry' component={CarpentryP}></Route>
-					<Route path='/handyman' component={HandymanP}></Route>
-					<Route path='/electric' component={ElectricP}></Route>
-					<Route path='/painting' component={PaintingP}></Route>
-					<Route path='/bathrooms' component={BathroomsP}></Route>
+					<Route path='/locksmith'>
+						<LocksmithP />
+					</Route>
+					<Route path='/plumber'>
+						<PlumberP />
+					</Route>
+					<Route path='/carpentry'>
+						<CarpentryP />
+					</Route>
+					<Route path='/handyman'>
+						<HandymanP />
+					</Route>
+					<Route path='/electric'>
+						<ElectricP />
+					</Route>
+					<Route path='/painting'>
+						<PaintingP />
+					</Route>
+					<Route path='/bathrooms'>
+						<BathroomsP />
+					</Route>
 
-					<Route path='*' component={NotFoundPage} />
+					<Route path='*'>
+						<NotFoundPage />
+					</Route>
 
-					<Route path='/404' component={NotFoundPage} />
+					<Route path='/404'>
+						<NotFoundPage />
+					</Route>
 					<Redirect to='/404' />
 				</Switch>
 				<Footer></Footer>

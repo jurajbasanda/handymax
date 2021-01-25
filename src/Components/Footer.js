@@ -15,7 +15,7 @@ export default function Footer() {
 		<footer style={footerStyle}>
 			<a href='https://jurajbasanda.com/' style={style}>
 				{' '}
-				Made by ©Juraj Basanda
+				Made by © Juraj Basanda
 			</a>
 		</footer>
 	)
