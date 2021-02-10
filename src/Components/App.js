@@ -40,10 +40,10 @@ export default class App extends Component {
 				<Switch>
 					<Route path='/' exact component={Home} />
 					<Route path='/services' component={ServicesP} />
-					<Route path='/about' component={About}>
+					<Route path='/about'>
 						<About />
 					</Route>
-					<Route path='/contact' component={Contact}>
+					<Route path='/contact'>
 						<Contact />
 					</Route>
 
