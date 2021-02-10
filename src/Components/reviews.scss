@@ -1,12 +1,18 @@
-.review-item{
-            margin: 3vh;
-            a{color: black;
-                text-align: center;
-                
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;}
-            img{height:5rem;} 
-            h3{margin: 2vh 0;}
-        }
+.review-item {
+	margin: 3vh;
+	a {
+		color: black;
+		text-align: center;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	img {
+		height: 5rem;
+	}
+	h3 {
+		margin: 2vh 0;
+	}
+}
